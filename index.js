@@ -1,5 +1,6 @@
 const rsa = require('node-rsa');
 const fs = require('fs');
+const path = require('path');
 function keys(){
 const publickey= new rsa();
 const privatekey =new rsa();
@@ -20,8 +21,18 @@ function decryption(str){
     const b = private_key.decrypt(str,'utf8');
     return b;
 }
+function generatekey(){
+    const key = new Nodersa().generateKeyPair();
+    const public_key=key.exportKey('public');
+    const private_key=key.exportKey('private');
+    fs.openSync(path.join(__dirname +"/keys/publickey.pem","w"));
+    fs.writeFileSync(path.join(__dirname +"/keys/publickey.pem",public_key,'utf8'));
+    fs.openSync(path.join(__dirname + "/keys/private.pem"),"w");
+    fs.writeFileSync("./keys/private.pem",private_key,'utf8');
+    
+}
 module.exports={
-    encryption,decryption
+    encryption,decryption,generatekey
 }
 
 

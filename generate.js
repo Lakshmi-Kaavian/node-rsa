@@ -1,6 +1,6 @@
 const Nodersa= require('node-rsa');
 const fs= require('fs');
-const path = require('path');
+//const path = require('path');
 
 function generatekey(){
     const key = new Nodersa().generateKeyPair();
