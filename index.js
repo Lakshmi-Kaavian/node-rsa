@@ -3,8 +3,8 @@ const fs = require('fs');
 function keys(){
 const publickey= new rsa();
 const privatekey =new rsa();
-const public=fs.readFileSync(path.join(__dirname +"/keys/publickey.pem","utf8"));
-const private=fs.readFileSync(path.join(__dirname +"/keys/private.pem","utf8"));
+const public=fs.readFileSync("./keys/publickey.pem","utf8");
+const private=fs.readFileSync("./keys/private.pem","utf8");
 publickey.importKey(public);
 privatekey.importKey(private);
 return (publickey,privatekey);

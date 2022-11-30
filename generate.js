@@ -2,7 +2,7 @@ const Nodersa= require('node-rsa');
 const fs= require('fs');
 const path = require('path');
 
-function Generatekey(){
+function generatekey(){
     const key = new Nodersa().generateKeyPair();
     const public_key=key.exportKey('public');
     const private_key=key.exportKey('private');
@@ -13,5 +13,5 @@ function Generatekey(){
     
 }
 module.exports={
-    Generatekey
+    generatekey
 }
