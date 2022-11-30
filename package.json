@@ -1,0 +1,24 @@
+{
+  "name": "nodersa",
+  "version": "1.0.0",
+  "description": "FUNCTION THAT GENERATES KEY PAIR AND STORES IT IN A FILE AND THEN ENCRYPTION AND DECRYPTION IS DONE",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LakshmiKUTTYKaavian/node-rsa.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LakshmiKUTTYKaavian/node-rsa/issues"
+  },
+  "homepage": "https://github.com/LakshmiKUTTYKaavian/node-rsa#readme",
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "node-rsa": "^1.1.1"
+  }
+}
