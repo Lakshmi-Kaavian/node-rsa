@@ -1,1 +1,5 @@
-FUNCTION THAT GENERATES KEY PAIR AND STORES IT IN A FILE AND THEN ENCRYPTION AND DECRYPTION IS DONE
+#
+kaavian-rsa-encrypt-decrypt
+##
+This package allows you to encrypt your data using your RSA PUBLIC KEY
+and decrypt the encrypted data ONLY by using your RSA PRIVATE KEY
