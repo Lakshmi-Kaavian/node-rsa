@@ -1,5 +1,5 @@
 {
-  "name": "nodersa",
+  "name": "kaavian-rsa-encrypt-decrypt",
   "version": "1.0.0",
   "description": "FUNCTION THAT GENERATES KEY PAIR AND STORES IT IN A FILE AND THEN ENCRYPTION AND DECRYPTION IS DONE",
   "main": "index.js",
